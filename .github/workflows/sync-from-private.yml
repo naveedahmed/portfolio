@@ -1,0 +1,34 @@
+name: Sync Files from Private Repo
+
+on:
+  workflow_dispatch: # Manual trigger
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight (UTC)
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the public repo
+      - name: Checkout Public Repo
+        uses: actions/checkout@v3
+
+      # Step 2: Clone the private repo
+      - name: Clone Private Repo
+        run: |
+          git clone --branch live-site https://$PRIVATE_REPO_PAT@github.com/naveedahmed/personal-website.git private-repo
+
+      # Step 3: Copy contents of 'build' folder to public repo root
+      - name: Copy Files
+        run: |
+          cp -r private-repo/build/* . # Copies contents only, not the folder
+
+      # Step 4: Commit and push changes to the public repo
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "naveedahmed"
+          git config --global user.email "ahmed.naveed@yahoo.co.in"
+          git add .
+          git commit -m "Sync from private repo 'live-site' branch"
+          git push
