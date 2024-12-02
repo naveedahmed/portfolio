@@ -47,6 +47,7 @@ jobs:
           cp -r private-repo/build/* .
 
       # Step 8: Commit and Push Changes
+      - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.PUBLIC_REPO_PAT }}
         run: |
