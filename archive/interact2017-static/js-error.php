@@ -1,2 +1,0 @@
- <noscript><style>div{display: none;}</style><span class="js-error">
-        <h3>JavaScript Required</h3><p>INTERACT 2017 website needs JavaScript to function properly. </p><p>Please <b>enable JavaScript</b> in your browser settings and <b>refresh the page.</b></p></span></noscript>

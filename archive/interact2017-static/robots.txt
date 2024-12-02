@@ -1,9 +1,0 @@
-# www.robotstxt.org/
-# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
-
-User-agent: *
-Disallow: /credits
-Disallow: /credits.php
-Disallow: /files/MHA_Clearance_INTERACT2017.pdf
-
-Sitemap: http://www.interact2017.org/sitemap.xml

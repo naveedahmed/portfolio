@@ -1,1 +1,0 @@
-<a href="http://www.springer.com/series/558" target="_blank">Springer LNCS Series</a>
