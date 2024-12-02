@@ -26,11 +26,6 @@ jobs:
         run: |
           ls -R private-repo
 
-      - name: Check Git Status
-        run: |
-          cd private-repo
-          git status
-
       - name: Reset Public Repo
         run: |
           git reset --hard
@@ -41,9 +36,11 @@ jobs:
           cp -r private-repo/build/* .
 
       - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUBLIC_REPO_PAT }}
         run: |
           git config --global user.name "naveedahmed"
           git config --global user.email "naveedahmedjaleel@gmail.com"
           git add .
           git commit -m "Sync from private repo 'live-site' branch"
-          git push
+          git push https://${{ secrets.PUBLIC_REPO_PAT }}@github.com/naveedahmed/portfolio.git
