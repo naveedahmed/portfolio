@@ -10,37 +10,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout Public Repo
       - name: Checkout Public Repo
         uses: actions/checkout@v3
 
-      # Step 2: Cleanup Old Repo Directory
       - name: Cleanup Old Repo Directory
         run: |
           if [ -d "private-repo" ]; then rm -rf private-repo; fi
 
-      # Step 3: Clone the Private Repo
       - name: Clone Private Repo
         run: |
+          set -e
           git clone --branch live-site https://${{ secrets.PRIVATE_REPO_PAT }}@github.com/naveedahmed/personal-website.git private-repo
 
-      # Debug Step: List Files in Cloned Repo
       - name: List Files in Private Repo
         run: |
           ls -R private-repo
 
-      # Step 4: Reset Public Repo
+      - name: Check Git Status
+        run: |
+          cd private-repo
+          git status
+
       - name: Reset Public Repo
         run: |
           git reset --hard
           git clean -fd
 
-      # Step 5: Copy Files
       - name: Copy Files
         run: |
           cp -r private-repo/build/* .
 
-      # Step 6: Commit and Push Changes
       - name: Commit and Push Changes
         run: |
           git config --global user.name "naveedahmed"
