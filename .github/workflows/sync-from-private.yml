@@ -46,7 +46,14 @@ jobs:
         run: |
           cp -r private-repo/build/* .
 
-      # Step 8: Commit and Push Changes
+      # Step 8: Print Current Directory and Environment Variables
+      - name: Print Current Directory
+        run: pwd
+
+      - name: Print Environment Variables
+        run: env
+
+      # Step 9: Commit and Push Changes
       - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.PUBLIC_REPO_PAT }}
