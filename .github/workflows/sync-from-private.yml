@@ -1,58 +1,61 @@
-name: Sync Files from Private Repo
+name: Sync from Private Repo
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   sync:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout Public Repo
-      - name: Checkout Public Repo
-        uses: actions/checkout@v3
+    - name: Checkout Public Repo
+      uses: actions/checkout@v3
+      with:
+        repository: naveedahmed/portfolio
+        token: ${{ secrets.PUBLIC_REPO_PAT }}
+        ssh-strict: true
+        persist-credentials: true
+        clean: true
+        sparse-checkout-cone-mode: true
+        fetch-depth: 1
+        fetch-tags: false
+        lfs: false
+        submodules: false
+        set-safe-directory: true
 
-      # Step 2: Cleanup Old Repo Directory
-      - name: Cleanup Old Repo Directory
-        run: |
-          if [ -d "private-repo" ]; then rm -rf private-repo; fi
+    - name: Cleanup Old Repo Directory
+      run: |
+        if [ -d "private-repo" ]; then rm -rf private-repo; fi
 
-      # Step 3: Clone the Private Repo
-      - name: Clone Private Repo
-        run: |
-          set -e
-          git clone --branch live-site https://${{ secrets.PRIVATE_REPO_PAT }}@github.com/naveedahmed/personal-website.git private-repo
+    - name: Clone Private Repo
+      run: |
+        set -e
+        git clone --branch live-site https://<token>@github.com/naveedahmed/personal-website.git private-repo
+      env:
+        PRIVATE_REPO_PAT: ${{ secrets.PRIVATE_REPO_PAT }}
 
-      # Step 4: Verify Clone Operation
-      - name: Verify Clone Operation
-        run: |
-          if [ -d "private-repo" ]; then echo "Clone successful"; else echo "Clone failed"; fi
+    - name: Verify Clone
+      run: |
+        if [ -d "private-repo" ]; then echo "Clone successful"; else echo "Clone failed"; fi
 
-      # Step 5: List Files in Private Repo
-      - name: List Files in Private Repo
-        run: |
-          ls -R private-repo
+    - name: List Files in Private Repo
+      run: |
+        ls -R private-repo
 
-      # Step 6: Reset Public Repo
-      - name: Reset Public Repo
-        run: |
-          git reset --hard
-          git clean -fd
+    - name: Copy Files from Private Repo to Public Repo
+      run: |
+        git reset --hard
+        git clean -fd
+        cp -r private-repo/build/* .
 
-      # Step 7: Copy Files
-      - name: Copy Files
-        run: |
-          cp -r private-repo/build/* .
-
-      # Step 8: Commit and Push Changes
-      - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.PUBLIC_REPO_PAT }}
-        run: |
-          git config --global user.name "naveedahmed"
-          git config --global user.email "ahmed.naveed@yahoo.co.in"
-          git add .
-          git commit -m "Sync from private repo 'live-site' branch"
-          git push https://${{ secrets.PUBLIC_REPO_PAT }}@github.com/naveedahmed/portfolio.git
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "naveedahmed"
+        git config --global user.email "ahmed.naveed@yahoo.co.in"
+        git add .
+        git commit -m "Sync from private repo 'live-site' branch"
+        git push https://<token>@github.com/naveedahmed/portfolio.git
+      env:
+        PUBLIC_REPO_PAT: ${{ secrets.PUBLIC_REPO_PAT }}
