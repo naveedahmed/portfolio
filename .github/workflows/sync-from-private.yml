@@ -34,6 +34,7 @@ jobs:
       - name: Copy Files
         run: |
           cp -r private-repo/build/* .
+          git rm -r --cached private-repo
 
       - name: Commit and Push Changes
         env:
