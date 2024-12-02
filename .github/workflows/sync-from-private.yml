@@ -17,7 +17,12 @@ jobs:
       # Step 2: Clone the private repo
       - name: Clone Private Repo
         run: |
-          git clone --branch live-site https://$PRIVATE_REPO_PAT@github.com/naveedahmed/personal-website.git private-repo
+          git clone --branch live-site https://${{ secrets.PRIVATE_REPO_PAT }}@github.com/naveedahmed/personal-website.git private-repo
+
+          # Debug Step: List Files in Cloned Repo
+      - name: List Files in Private Repo
+        run: |
+          ls -R private-repo
 
       # Step 3: Copy contents of 'build' folder to public repo root
       - name: Copy Files
