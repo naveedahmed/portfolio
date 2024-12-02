@@ -1,0 +1,14 @@
+        {{#photos}}
+        <div class="isotope-item">
+            <a href="photos/{{imageFileName}}.jpg" data-fancybox="gallery"
+                data-caption="{{location}}">
+                <img src="photos/{{imageFileName}}_thumb.jpg" alt="{{thumbnailAltTxt}}" />
+                <div class="img-info">
+                    <div class="push-bottom">
+                        {{!-- <span class="overlay-text">{{thumbnailOverlayTxt}}</span> --}}
+                        <span class="location">{{location}}</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{/photos}}

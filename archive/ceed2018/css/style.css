@@ -1,0 +1,448 @@
+@charset "UTF-8";
+/* CEED 2018 CSS Document
+   By Design & Dev Team. (Based on work of Naveed Ahmed) */
+
+@import "normalize.css"; /* To reset styles across browsers*/
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 62.5%;
+}
+h1 {
+	font-size: 2.8em;
+	color: #fdc616;
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+h2 {
+	font-size: 1.8em;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+p {
+	font-size: 1.6em;
+	-webkit-column-break-before: column;
+	margin-top: 0;
+	line-height: 1.4;
+}
+.bold {
+	font-weight: 700;
+}
+ol,
+ul {
+	font-size: 1.6em;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+.hide-in-screen {
+	display: none;
+}
+.wrapper {
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+	font-size: 1em;
+}
+.wrapper:before,
+.wrapper:after {
+	content: "";
+	display: table;
+}
+.wrapper:after {
+	clear: both;
+}
+.header {
+	background: #f16149;
+	border-bottom: 5px solid #c95c4a;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+.ceed-logo {
+	height: 35px;
+	width: 140px;
+	top: -50px;
+	position: absolute;
+	-webkit-transition: top 200ms ease-in-out;
+	-moz-transition: top 200ms ease-in-out;
+	-o-transition: top 200ms ease-in-out;
+	transition: top 200ms ease-in-out;
+	margin-left: -3px;
+}
+.ceed-logo img {
+	height: 100%;
+}
+ul.main-menu {
+	float: right;
+	width: 585px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.main-menu li {
+	float: left;
+	margin-left: 5px;
+}
+.main-menu li:first-child {
+	margin-left: 0;
+}
+.main-menu a {
+	display: inline-block;
+	padding: 18px 10px 13px;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: normal;
+	-webkit-transition: color 100ms ease-in-out;
+	-moz-transition: color 100ms ease-in-out;
+	-o-transition: color 100ms ease-in-out;
+	transition: color 100ms ease-in-out;
+	border-bottom: 0;
+}
+.main-menu a:hover {
+	border-bottom: 5px solid #e2f2f0;
+}
+.main-menu a.active {
+	color: #e9e9d3;
+	border-bottom: 5px solid #e2f2f0;
+}
+.stage {
+	background: #e2f2f0 url(../img/pattern_dark.png) left 30px repeat;
+	padding-top: 70px;
+	padding-bottom: 5em;
+	height: auto;
+}
+.ticker {
+	background: #e05a44;
+	color: #e9e9d3;
+	font-size: 1.4em;
+	padding: 7px 5px 3px;
+	line-height: 1;
+	margin-bottom: 30px;
+	border-radius: 30px;
+	font-family: 'PT Sans', sans-serif;
+}
+.stage-spot {
+	width: 600px;
+	margin: 60px auto 40px;
+	height: 600px auto;
+}
+.stage-spot span {
+	text-align: left;
+	display: block;
+}
+.stage-logo {
+	width: 250px;
+	margin-bottom: 2em;
+	text-align: left;
+	float: left;
+}
+.stage-logo img {
+	width: 100%;
+}
+.stage-title {
+	color: #d43625;
+	text-transform: uppercase;
+	font-size: 2.1em;
+	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
+}
+.stage-subtitle {
+	font-size: 1.4em;
+	line-height: 1.6;
+	margin-bottom: 2em;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.75);
+}
+.stage-desc {
+	font-size: 1.8em;
+	color: #f8ed31;
+	margin: 2.5em 0 4em 0;
+}
+.stage-buttons {
+	text-align: center;
+}
+.stage-buttons a {
+	display: inline-block;
+	color: #e9e9d3;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #e05a44;
+	margin-right: 20px;
+	padding: 10px 20px;
+	min-width: 80px;
+	font-size: 1.6em;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+.stage-buttons a > span{
+    text-align: center;
+}
+.stage-buttons a:last-child {
+	margin-right: 0;
+}
+.imp-date-header {
+	background: #c95c4a;
+	border-bottom: 0.3em solid #c95c4a;
+}
+.imp-date-header p {
+	color: #e9e9d3;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1;
+	margin: 0;
+	padding: 0.8em;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+.dates {
+	background: #e07361;
+	min-height: 600px;
+    height: auto;
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	border-bottom: 0.3em solid #c95c4a;
+}
+.dates h4 {
+	font-size: 1.6em;
+	color: rgba(0, 0, 0, 0.75);
+	margin: 0;
+	margin-bottom: 0px;
+    margin-top:40px;
+}
+.dates h4:first-child {
+	margin-top: 0;
+}
+.dates p {
+	font-size: 1.6em;
+	color: #e9e9d3;
+}
+.examination {
+	background: #e2f2f0 url(../img/pattern_2.jpg) left 30px repeat;
+	min-height: 200px;
+	height: auto;
+}
+.examination h3{
+    color:#FFF !important;
+}
+.vert-1-of-3-col,
+.vert-2-of-3-col,
+.vert-3-of-3-col {
+	min-height: 545px;
+	height: 668px;
+	width: 240px;
+	float: left;
+	padding: 140px 40px;
+	font-family: 'PT Sans', sans-serif;
+	color: rgba(0, 0, 0, 0.75);
+}
+.vert-1-of-3-col {
+	background: #d5a634;
+	position: relative;
+	height: 668px;
+}
+.vert-2-of-3-col {
+	background: #d29a12;
+}
+.vert-3-of-3-col {
+	background: #1e8d96;
+    color:rgba(255,255,255,0.9);
+}
+.examination h1 {
+	color: #e2f2f0;
+	text-transform: uppercase;
+	font-size: 3em;
+	line-height: 1;
+}
+h1 > .big {
+	font-size: 1.5em;
+	letter-spacing: 1px;
+}
+.examination .content {
+	height: 465px;
+}
+.vert-1-of-3-col h3,
+.vert-2-of-3-col h3,
+.vert-3-of-3-col h3 {
+	text-transform: uppercase;
+	font-size: 2.4em;
+	color: #d4ded3;
+	font-weight: normal;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0;
+}
+.examination .vert-1-of-3-col h2 {
+	display: inline-block;
+	position: absolute;
+	width: 550px;
+	top: 123px;
+	left: 362px;
+	font-size: 2em;
+	font-weight: 700;
+	color: #e2f2f0;
+}
+.vert-1-of-3-col ol,
+.vert-2-of-3-col ol,
+.vert-3-of-3-col ol,
+.vert-1-of-3-col ul,
+.vert-2-of-3-col ul,
+.vert-3-of-3-col ul {
+	padding: 0;
+	margin: 0;
+	padding-left: 1em;
+	margin-left: 1em;
+	line-height: 1.5;
+}
+.vert-1-of-3-col a,
+.vert-2-of-3-col a,
+.vert-3-of-3-col a {
+	border-bottom: 0.1em dashed rgba(0, 0, 0, 0.75);
+}
+.vert-1-of-3-col a:hover,
+.vert-2-of-3-col a:hover,
+.vert-3-of-3-col a:hover {
+	border-bottom: 0.1em dashed rgba(255, 255, 255, 0.75);
+}
+.vert-1-of-3-col a:active,
+.vert-2-of-3-col a:active,
+.vert-3-of-3-col a:active {
+	background: rgba(255, 255, 255, 0.75);
+}
+.examination ol li {
+	list-style: upper-latin;
+}
+.examination ul li {
+	list-style: decimal;
+}
+.vert-1-of-3-col h4,
+.vert-2-of-3-col h4,
+.vert-3-of-3-col h4 {
+	font-size: 1.6em;
+	text-transform: uppercase;
+	color: #d4ded3;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+.programmes {
+	background: #567c84 url(../img/pattern_3.jpg) left 30px repeat;
+	height: auto;
+	color: rgba(0, 0, 0, 0.75);
+	font-family: 'PT Sans', sans-serif;
+}
+.vert-1-of-2-col,
+.vert-2-of-2-col {
+	width: 400px;
+	height: 600px;
+	float: left;
+	padding: 70px 40px;
+}
+.vert-1-of-2-col {
+	background: #e2f2f0;
+}
+.vert-2-of-2-col {
+	background: #d4ded3;
+}
+.programmes h1 {
+	color: #f16149;
+	text-transform: uppercase;
+	margin-bottom: 1.5em;
+}
+.programmes ul {
+	line-height: 1.5;
+	padding-left: 0;
+	margin: 2em 0;
+	list-style: square;
+	padding-left: 1em;
+	margin-left: 1em;
+}
+.programmes a {
+	border-bottom: 0.1em dashed rgba(0, 0, 0, 0.75);
+}
+.programmes a:hover {
+	border-bottom: 0.1em dashed rgba(255, 255, 255, 0.75);
+}
+.programmes a:active {
+	background: rgba(255, 255, 255, 0.75);
+}
+.downloads {
+	background: #e2f2f0 url(../img/pattern_4.jpg) left 30px repeat;
+    color:#FFF !important;
+}
+.downloads h3{
+    color:#FFF !important;
+}
+.downloads .vert-1-of-3-col,
+.downloads .vert-2-of-3-col,
+.downloads .vert-3-of-3-col {
+	padding-top: 70px;
+	height: 700px;
+}
+.footer {
+	background: #2fafa9 url(../img/pattern_dark.png) left top repeat;
+	padding: 2em 0;
+	font-size: 1.4em;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+}
+.footer p {
+	font-size: 1em;
+	margin-bottom: 1em;
+	
+}
+.content-column {
+	-webkit-column-count: 1;
+	/* Chrome, Safari, Opera */
+    
+	-moz-column-count: 1;
+	/* Firefox */
+    
+	column-count: 1;
+	height: 600px;
+	-moz-column-gap: 30px;
+	-webkit-column-gap: 30px;
+	column-gap: 30px;
+	overflow: none;
+	margin-top: 30px;
+	text-align: justify;
+}
+.cols-3 {
+	-webkit-column-count: 3;
+	/* Chrome, Safari, Opera */
+    
+	-moz-column-count: 3;
+	/* Firefox */
+    
+	column-count: 3;
+	-moz-column-gap: 50px;
+	-webkit-column-gap: 50px;
+	column-gap: 50px;
+	width: 100%;
+}
+.hamburger {
+	height: 4em;
+	width: 5em;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	right: 200%;
+	text-align: center;
+}
+#hamburger-icon {
+	fill: rgba(255, 255, 255, 0.4);
+	width: 50%;
+	margin-top: 1em;
+}

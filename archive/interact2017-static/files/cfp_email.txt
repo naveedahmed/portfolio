@@ -1,0 +1,130 @@
+(Intentional Bcc. Apologies for cross-posting.)
+
+
+
+The 16th IFIP TC.13 International Conference on Human-Computer Interaction - INTERACT 2017 
+------------------------------ ------------------------------ ------------------------------ ------------------------------ --------------
+September 25-29, 2017, Mumbai, India | http://interact2017.org/
+  
+INTERACT 2017 is part of a series of conferences on Human-Computer Interaction organized under the aegis of the Technical Committee 13 of the UNESCO International Federation for Information Processing (IFIP). The IFIP TC 13 aims at developing the science and technology of the interaction between humans and computing devices. The first edition of INTERACT was organized in London, UK in 1984 and the most recent editions occurred in Germany (2015), South Africa (2013) and Portugal (2011).  INTERACT 2017 brings this conference for the first time to India. The conference will be hosted by the Industrial Design Centre (IDC) in Indian Institute of Technology, Bombay (IIT-B) http://www.idc.iitb.ac.in/. It is co-sponsored by HCI Professionals Association of India (HCIPAI) and the Computer Society of India (CSI). 
+
+Call for Papers
+------------------------------ ------------------------------ ------------------------------ ------------------------------ --------------
+INTERACT 2017 welcomes contributions covering all aspects of Human-Computer Interaction. The areas of interest may include, but may not be limited to, one or multiple the topics encompassing methods and tools for Interface development and interaction Design, user interface modelling, evaluation methods, cross-cultural and social issues in HCI, and specific application areas such as adaptive interfaces, multimodal interfaces, multi-users interfaces, human-robot interaction, ... 
+
+We invite you to submit your original work to INTERACT 2017  in the following track categories:
+
+Tracks with submission closing January 25, 2017
+* Full Papers (Abstract Submission: Jan 17, 2017)
+* Workshops
+* Field Trips
+
+Tracks with submission closing April 19, 2017
+* Short Papers
+* Interactive Posters
+* Demonstrations
+* Tutorials/Courses
+* Doctoral Consortium
+
+Tracks with submission closing June 15, 2017
+* Student Research Consortium
+* Student Design Consortium
+* Installations 
+* Industry Presentations
+* Case Studies
+* Panels
+
+Contributions will be peer-reviewed by the members of the international program committee.  All accepted contributions will be published by Springer in the LNCS series. 
+
+Outstanding contributions be me considered for an awards in the following categories:
+
+* IFIP Brian Shackel Award: recognizes contribution that draws attention to the need for a comprehensive human-centred approach in the design and use of information technology in which the human and social implications have been taken into account. 
+* IFIP TC 13 Accessibility Award: recognizes contributions with international impact in the field of accessibility for disabled users in human-computer interaction. 
+* Interaction Design for International Development (IDID) Award: recognizes contribution to the application of interactive systems for social and economic development of people in developing countries.
+
+Submission Information
+------------------------------ ------------------------------ ------------------------------ ------------------------------ --------------
+Contributions should be written in English and be formatted according to the Springer LNCS template available at: http://interact2017.org/files/Springer_LNCS_Template_and_Instructions.zip
+
+Please submit your contribution online using PCS at https://precisionconference.com/~interact 
+
+
+Organization
+------------------------------ ------------------------------ ------------------------------ ------------------------------ --------------
+General Chairs: generalchair@interact2017.org
+   Anirudha Joshi, IIT Bombay, India
+   Girish Dalvi, IIT Bombay, India 
+
+Full Papers Chairs: fullpapers@interact2017.org
+   Regina Bernhaupt, Ruwido, France
+   Jacki O’Neill, Microsoft Research, India
+
+Workshops Chairs: workshops@interact2017.org
+   Torkil Clemmensen, Copenhagen Business School, Denmark 
+   Rajamanickam Venkatesh, IIT Bombay, India
+
+Field Trips Chairs: fieldtrips@interact2017.org
+   Nimmi Rangaswamy, Xerox, India
+   Jose Abdelnour Nocera, University of West London, UK
+   Debjani Roy, MSU Baroda, India
+
+Short Papers Chairs: shortpapers@interact2017.org
+   Peter Forbrig, University of Rostock, Germany
+   Sriganesh Madhvanath, PARC, USA
+   
+Demonstrations Chairs: demos@interact2017.org
+   Takahiro Miura, University of Tokyo, Japan
+   Shengdong Zhao, National University of Singapore, Singapore
+   Manjiri Joshi, IIT Bombay, India
+   
+Posters Chairs: posters@interact2017.org
+   Girish Prabhu, Srishti Labs, India
+   Zhengjie Liu, Dalian Maritime University, China
+
+Doctoral Consortium Chairs: docconsortium@interact2017.org
+   Paula Kotze, CSIR Meraka Institute, South Africa
+   Pedro Campos, Madeira Interactive Technologies Institute, Portugal
+
+Student Research Consortium Chairs: srconsortium@interact2017.org
+   Indrani Medhi Thies, Microsoft, India
+   Naveen Bagalkot, Srishti Labs, India
+   Janet Wesson, Nelson Mandela Metropolitan University, South Africa
+
+Student Design Consortium Chairs: sdconsortium@interact2017.org
+   Abhishek Shrivastava, IIT Guwahati, India
+   Prashant Sachan, Trell, India
+
+Installations Chairs: installations@interact2017.org
+   Ishneet Grover, Samsung, India
+   Jayesh Pillai, IIT Bombay, India
+   Nagraj Emmady, IIT Bombay, India
+
+Courses Chairs: courses@interact2017.org
+   Gerrit van der Veer
+   Dhaval Vyas, Queensland University of Technology, Australia
+
+Case Studies Chairs: casestudies@interact2017.org
+   Ravi Poovaiah, IIT Bombay, India
+   Elizabeth Churchill, Google, USA
+
+Industry Presentations Chairs: industry@interact2017.org
+   Suresh Chande, Microsoft, Finland
+   Fernando Loizides, University of Wolverhampton, UK
+
+Panels Chairs: panels@interact2017.org
+   Antonella De Angeli, University of Trento, Italy
+   Rosa Arriaga, Georgia Tech, USA
+
+Technical Program & Proceedings Chairs: proceedings@interact2017.org
+   Marco Winckler, ICS-IRIT, Univerité Paul Sabatier, France
+   Devanuj, Industrial Design Centre , IIT Bombay, India
+
+Web & Social Media Chairs: webchair@interact2017.org
+   Naveed Ahmed, Adobe Systems, India
+
+Student Volunteers Chairs: volunteers@interact2017.org
+    Rasagy Sharma, MapBox, India 
+
+------------------------------ ------------------------------ ------------------------------ ------------------------------ --------------
+Further information please visit the web site: http://interact2017.org/
+

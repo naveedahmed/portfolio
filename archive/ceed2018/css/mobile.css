@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+/* CEED 2017 CSS Document
+   Based on design by Naveed Ahmed */
+
+@media (max-width: 800px) {
+    
+body {
+	font-size: 80%;
+	position: relative;
+/*    background: red;*/
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.9);
+	position: absolute;
+	display: none;
+}
+.wrapper {
+	width: 100%;
+}
+.header {
+	height: 4em;
+	border: 0;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+}
+.hide-in-device {
+	display: none;
+}
+.hide-in-screen {
+	display: block;
+}
+.stage,
+ .dates,
+ .examination,
+ .programmes,
+ .downloads,
+ .footer {
+	padding: 0;
+	height: auto;
+	margin: 0;
+}
+.stage:before,
+ .stage:after,
+ .dates:before,
+ .dates:after,
+ .examination:before,
+ .examination:after,
+ .programmes:before,
+ .programmes:after,
+ .downloads:before,
+ .downloads:after,
+ .footer:before,
+ .footer:after,
+ .vert-1-of-3-col:before,
+ .vert-1-of-3-col:after,
+ .vert-2-of-3-col:before,
+ .vert-2-of-3-col:after,
+ .vert-3-of-3-col:before,
+ .vert-3-of-3-col:after,
+ .vert-1-of-2-col:before,
+ .vert-2-of-2-col:before,
+ .vert-1-of-2-col:after,
+ .vert-2-of-2-col:after {
+	content: "";
+	display: table;
+}
+.stage:after,
+ .dates:after,
+ .examination:after,
+ .programmes:after,
+ .downloads:after,
+ .footer:after,
+ .vert-1-of-3-col:after,
+ .vert-2-of-3-col:after,
+ .vert-3-of-3-col:after,
+ .vert-1-of-2-col:after,
+ .vert-2-of-2-col:after {
+	clear: both;
+}
+.ceed-logo-mobile {
+	font-size: 2.5em;
+	padding: 0.2em 0.2em;
+	padding-left: 0.5em;
+	font-family: 'Montserrat', sans-serif;
+	color: #e2f2f0;
+}
+.stage {
+	padding: 2em;
+	padding-top: 4.5em;
+}
+.stage-title {
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+.stage-spot {
+	width: 90%;
+}
+.stage-logo {
+    display: block;
+    width:80%;
+    max-width: 300px;
+	margin: 0 auto;
+    text-align: center;
+/*	max-width: 80%;*/
+    float: none;
+	max-height: 360px;
+	padding-bottom: 3em;
+}
+.stage-title {
+	display: block;
+    width: 80%;
+    margin: 40px auto;
+    text-align: center !important;
+}
+.stage-subtitle {
+	display: block;
+    text-align: center !important;
+}
+.ticker {
+	display: none;
+}
+.stage-buttons a {
+	margin-right: 0;
+	padding: 1em 2em;
+	min-width: 70%;
+	width: 70%;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+.stage-buttons a:last-child {
+	margin-right: 0;
+}
+.dates {
+	padding: 3em 1.5em 1em;
+	border: 0;
+}
+ul.main-menu {
+}
+ul.fly-menu {
+	background: rgba(0, 0, 0, 0.9);
+	color: #FFF;
+	width: 100%;
+	font-size: 2.2em;
+	margin-top: 0px;
+	left: 200%;
+	position: absolute;
+	-webkit-transition: left 200ms ease-in-out;
+	-moz-transition: left 200ms ease-in-out;
+	-o-transition: left 200ms ease-in-out;
+	transition: left 200ms ease-in-out;
+}
+ul.fly-menu li {
+	display: block;
+	float: none;
+	text-align: center;
+	border-bottom: 1px solid #777;
+}
+.fly-menu a {
+	display: block;
+	padding: 1em;
+	color: #FFF;
+}
+.fly-menu a:hover {
+	border: 0;
+}
+.fly-menu a.active {
+	border: 0;
+}
+.fly-menu a:active {
+	color: #2fafa9;
+}
+.hamburger {
+	height: 4em;
+	width: 5em;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+#hamburger-icon {
+	fill: rgba(255, 255, 255, 0.4);
+	width: 50%;
+	margin-top: 1em;
+}
+.close-menu {
+	display: none;
+}
+.close-menu {
+	height: 4em;
+	width: 5em;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+#close-icon {
+	fill: rgba(255, 255, 255, 0.4);
+	width: 50%;
+	margin-top: 1em;
+	transform: scale(1.5)
+}
+.vert-1-of-3-col,
+ .vert-2-of-3-col,
+ .vert-3-of-3-col {
+	float: none;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 7.5em 1.5em 1.5em;
+}
+.vert-1-of-2-col,
+ .vert-2-of-2-col {
+	float: none;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 7.5em 1.5em 1.5em;
+}
+.vert-1-of-3-col h3,
+ .vert-2-of-3-col h3,
+ .vert-3-of-3-col h3 {
+	display: inline-block;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+.examination .vert-1-of-3-col h2 {
+	display: inline-block;
+	position: relative;
+	left: 0;
+	padding-bottom: 2em;
+	width: auto;
+}
+.downloads .vert-1-of-3-col,
+ .downloads .vert-2-of-3-col,
+ .downloads .vert-3-of-3-col {
+	padding-top: 3em;
+	padding-bottom: 2em;
+	height: auto;
+}
+.content-column {
+	-webkit-column-count: 1;
+	/* Chrome, Safari, Opera */
+        
+	-moz-column-count: 1;
+	/* Firefox */
+        
+	column-count: 1;
+}
+.cols-3 {
+	-webkit-column-count: 1;
+	/* Chrome, Safari, Opera */
+        
+	-moz-column-count: 1;
+	/* Firefox */
+        
+	column-count: 1;
+}
+.dates {
+	height: auto;
+}
+.examination .cols-3 {
+	height: auto;
+}
+.footer {
+	padding: 2em;
+}
+.examination h1 {
+	font-size: 4.5em;
+	line-height: 1.2;
+}
+h1 > .big {
+	font-size: 1em;
+	letter-spacing: 0px;
+}
+.vert-1-of-3-col h3,
+.vert-2-of-3-col h3,
+.vert-3-of-3-col h3 {
+	font-size: 3em;
+	margin-top: 1em;
+}
+.examination .vert-1-of-3-col h2 {
+	top: 0;
+	padding-bottom: 0;
+}
+.vert-1-of-3-col ol,
+.vert-2-of-3-col ol,
+.vert-3-of-3-col ol,
+.vert-1-of-3-col ul,
+.vert-2-of-3-col ul,
+.vert-3-of-3-col ul {
+	margin-bottom: 2em;
+}
+}
