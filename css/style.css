@@ -370,7 +370,7 @@ nav { margin-left: auto; }
 
 .portfolio-item .synopsis:after { clear: both; }
 
-.portfolio-item .synopsis.resume-box { background: rgba(236, 228, 222, 0.35) url(img/material_doc_icon.png) no-repeat 20px center; padding: 20px; padding-top: 0px; padding-left: 60px; background-size: 28px 28px; padding-bottom: 0; display: flex; align-items: center; }
+.portfolio-item .synopsis.resume-box { background: rgba(236, 228, 222, 0.35) url(../img/material_doc_icon.png) no-repeat 20px center; padding: 20px; padding-top: 0px; padding-left: 60px; background-size: 28px 28px; padding-bottom: 0; display: flex; align-items: center; }
 
 .portfolio-item .synopsis.resume-box ul { list-style: none; padding: 0; margin: 0; padding-right: 30px; font-size: 1.1em; }
 
@@ -681,7 +681,7 @@ body.dark .next-project .more { border-top: 1px solid rgba(51, 51, 51, 0.5); }
 
 .article-snippet .article-writeup h3 a { text-decoration: none; border: 0; }
 
-.article-snippet .article-writeup h3 a:after { content: " " url(img/open_in_new.svg); }
+.article-snippet .article-writeup h3 a:after { content: " " url(../img/open_in_new.svg); }
 
 .article-snippet .article-writeup h3::before { display: none; }
 
