@@ -370,7 +370,7 @@ nav { margin-left: auto; }
 
 .portfolio-item .synopsis:after { clear: both; }
 
-.portfolio-item .synopsis.resume-box { background: rgba(236, 228, 222, 0.35) url(/img/material_doc_icon.png) no-repeat 20px center; padding: 20px; padding-top: 0px; padding-left: 60px; background-size: 28px 28px; padding-bottom: 0; display: flex; align-items: center; }
+.portfolio-item .synopsis.resume-box { background: rgba(236, 228, 222, 0.35) url(img/material_doc_icon.png) no-repeat 20px center; padding: 20px; padding-top: 0px; padding-left: 60px; background-size: 28px 28px; padding-bottom: 0; display: flex; align-items: center; }
 
 .portfolio-item .synopsis.resume-box ul { list-style: none; padding: 0; margin: 0; padding-right: 30px; font-size: 1.1em; }
 
@@ -681,7 +681,7 @@ body.dark .next-project .more { border-top: 1px solid rgba(51, 51, 51, 0.5); }
 
 .article-snippet .article-writeup h3 a { text-decoration: none; border: 0; }
 
-.article-snippet .article-writeup h3 a:after { content: " " url(../img/open_in_new.svg); }
+.article-snippet .article-writeup h3 a:after { content: " " url(img/open_in_new.svg); }
 
 .article-snippet .article-writeup h3::before { display: none; }
 
@@ -705,7 +705,7 @@ body.dark .next-project .more { border-top: 1px solid rgba(51, 51, 51, 0.5); }
 
 .soon { padding-top: 24px; font-size: 1.1em; }
 
-.fotu-frame { width: 800px; max-width: 100%; background: url(../img/spinner.gif) center no-repeat; margin: 40px 0; }
+.fotu-frame { width: 800px; max-width: 100%; background: url(img/spinner.gif) center no-repeat; margin: 40px 0; }
 
 .fotu-frame .fotu { width: 800px; max-width: 100%; background: #EEE; outline: 1px solid #CCC; }
 
@@ -751,7 +751,7 @@ body.dark .next-project .more { border-top: 1px solid rgba(51, 51, 51, 0.5); }
 
 .nivo-directionNav a { display: block; width: 35px; height: 35px; background: #000; text-indent: -9999px; border: 0; opacity: 0.5; -webkit-transition: all 200ms ease-in-out; -moz-transition: all 200ms ease-in-out; -o-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out; }
 
-.theme-default .nivoSlider { position: relative; background: #fff url(../img/spinner.gif) no-repeat 50% 50%; }
+.theme-default .nivoSlider { position: relative; background: #fff url(img/spinner.gif) no-repeat 50% 50%; }
 
 .theme-default .nivoSlider img { position: absolute; top: 0px; left: 0px; display: none; }
 
@@ -761,9 +761,9 @@ body.dark .next-project .more { border-top: 1px solid rgba(51, 51, 51, 0.5); }
 
 .theme-default:hover .nivo-directionNav a { opacity: 1; }
 
-.theme-default a.nivo-nextNav { right: 0px; width: 35px; height: 35px; background: #AAA url(/img/arrow_front.png) no-repeat; background-size: contain; }
+.theme-default a.nivo-nextNav { right: 0px; width: 35px; height: 35px; background: #AAA url(img/arrow_front.png) no-repeat; background-size: contain; }
 
-.theme-default a.nivo-prevNav { left: -1px; background: #AAA url(/img/arrow_back.png) no-repeat; background-size: contain; }
+.theme-default a.nivo-prevNav { left: -1px; background: #AAA url(img/arrow_back.png) no-repeat; background-size: contain; }
 
 .theme-default .nivo-caption a { color: #fff; border-bottom: 1px dotted #fff; }
 
