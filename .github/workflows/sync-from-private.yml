@@ -22,6 +22,10 @@ jobs:
           set -e
           git clone --branch live-site https://${{ secrets.PRIVATE_REPO_PAT }}@github.com/naveedahmed/personal-website.git private-repo
 
+      - name: Verify Clone Operation
+        run: |
+          if [ -d "private-repo" ]; then echo "Clone successful"; else echo "Clone failed"; fi
+
       - name: List Files in Private Repo
         run: |
           ls -R private-repo
@@ -34,14 +38,13 @@ jobs:
       - name: Copy Files
         run: |
           cp -r private-repo/build/* .
-          git rm -r --cached private-repo
 
       - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.PUBLIC_REPO_PAT }}
         run: |
           git config --global user.name "naveedahmed"
-          git config --global user.email "naveedahmedjaleel@gmail.com"
+          git config --global user.email "ahmed.naveed@yahoo.co.in"
           git add .
           git commit -m "Sync from private repo 'live-site' branch"
           git push https://${{ secrets.PUBLIC_REPO_PAT }}@github.com/naveedahmed/portfolio.git
